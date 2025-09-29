@@ -4,7 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
+    <style>
+        .calendar{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 30px repeat(5, 50px);
+            row-gap: 20px;
+            column-gap: 10px;
+        }
 
+        .date, .day{
+            background-color: skyblue;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .day{
+            background-color: lightgray;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
     <h3>My personal Calendar</h3>
